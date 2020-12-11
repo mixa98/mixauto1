@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vozila | MIX AUTO</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Najbolji izbor polovnih automobila" />
+    <meta name="keywords" content="polovni automobili, audi, mercedes, bmw, prodaja automobila" />
+    <meta name="copyright" content="© 2020 Sva prava zadržana: MIX AUTO" />
+    <meta name="og:title" property="og:title" content="Polovni automobili">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigacija -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="logonav pt-2">
+                        <a href="index.html"><img src="assets/img/logof.png" alt="logo-nav"></a>
+                    </div>
+                </div>
+                <div class="col-6 text-center" id="navsoc">
+
+                </div>
+                <div class="col-3">
+                    <div class="menu-toggler">
+                        <div class="bar half top"></div>
+                        <div class="bar"></div>
+                        <div class="bar half bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+
+            <ul class="nav-list" id="navlinks">
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Baner sa reklamama -->
+    <div id="slika">
+
+        <img id="slide" src="assets/img/g63.jpg" alt="naslovna">
+
+    </div>
+
+    <!-- Pretraga vozila -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h2 class="naslov h1 my-5 nas">SVA VOZILA</h2>
+            </div>
+            <div class="col-12 py-3 bord1">
+                <h3 class="font-weight-bold text-center my-3">Pretraga</h3>
+                <p class="font-weight-bold">Upišite naziv automobila ili kliknite na logo radi pretrage određenog
+                    proizvođača</p>
+            </div>
+            <div class="col-12 col-lg-5 bord pt-4 text-center">
+                <input type="text" id="trazi" placeholder="Upišite naziv automobila...">
+            </div>
+            <div class="col-12 col-lg-7 pb-5 bord" id="izaberi"></div>
+        </div>
+
+        <!-- Sva vozila sa slikama i informacijama -->
+        <div class="container text-center">
+            <div class="row" id="svavozila">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Informacije o vroju vozilima i ostale informacije -->
+    <div class="container-fluid pb-5" id="infovoz">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="naslov h1 my-5 text-center nas">INFORMACIJE O NAMA</h2>
+                </div>
+                <div class="col-12 col-lg-6" id="najpit">
+                    <h4 class="font-weight-bold mb-3">Najčešća pitanja</h4>
+                    <h5>Da li su sva vozila polovna?</h5>
+                    <p class="font-weight-bold">Da, sva naša vozila su polovna.</p>
+                    <h5>Gde nabavljate vozila?</h5>
+                    <p class="font-weight-bold">Sva vozila su uvezena iz Nemačke, Švajcarske i Austrije.</p>
+                    <h5>Da li je moguće isprobati automobil pre kupovine?</h5>
+                    <p class="font-weight-bold">Da, moguće je isprobati bilo koji automobil pre same kupovine na
+                        poligonu ili u gradskoj vožnji.</p>
+                    <h5>Da li je moguća kupovina na lizing?</h5>
+                    <p class="font-weight-bold">Nažalost ne, još nismo u mogućnosti da poslujemo na taj način.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <table id="tabela" class="text-center">
+                        <tr>
+                            <td>Ukupan broj vozila</td>
+                            <td id="ukupnovozila"></td>
+                        </tr>
+                        <tr>
+                            <td>Ukupna cena svih vozila</td>
+                            <td id="ukupnacena"></td>
+                        </tr>
+                        <tr>
+                            <td>Prosečna cena vozila</td>
+                            <td id="prosekcena"></td>
+                        </tr>
+                        <tr>
+                            <td>Najskuplje vozilo</td>
+                            <td id="maxcena"></td>
+                        </tr>
+                        <tr>
+                            <td>Najjeftinije vozilo</td>
+                            <td id="mincena"></td>
+                        </tr>
+                        <tr>
+                            <td>Vozilo sa najvećom kubikažom</td>
+                            <td id="maxkub"></td>
+                        </tr>
+                        <tr>
+                            <td>Vozilo sa najmanjom kubikažom</td>
+                            <td id="minkub"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Futer -->
+    <div class="container-fluid py-5" id="futer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-4 text-center">
+                    <img src="assets/img/logof.png" alt="logo-futer">
+
+                    <h5>Prodaja polovnih automobila</h5>
+                    <h5>Auto servis</h5>
+                    <h5>Tehnički pregled</h5>
+                    <h5>Samouslužne perionice</h5>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4 ftr" id="info">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">MAPA SAJTA</h6>
+                    <p>
+                        <a href="">Početna</a>
+                    </p>
+                    <p>
+                        <a href="">Polovna vozila</a>
+                    </p>
+                    <p>
+                        <a href="">Autor sajta</a>
+                    </p>
+                    <p>
+                        <a href="">Kontakt</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4 ftr">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">KONTAKT</h6>
+                    <p>
+                        <i class="fa fa-home mr-3"></i>Zrenjaninski put 47, Beograd</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i>mix-auto@info.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>011/ 277-834</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i>064/225-31-10</p>
+                </div>
+                <div class="col-12 text-center" id="ikone">
+                    <p>© 2020 Sva prava zadržana: <strong>MIX AUTO</strong></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/vozila.js"></script>
+
+
+
+</body>
+
+</html>

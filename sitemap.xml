@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmnls="https://www.sitemaps.org/schemas/sitemap/0.9/">
+	<url>
+		<loc>index.html</loc>
+		<lastmod>2020-12-4</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>vozila.html</loc>
+		<lastmod>2020-12-4</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>autor.html</loc>
+		<lastmod>2020-12-4</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>usluge.html</loc>
+		<lastmod>2020-12-4</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc></loc>
+		<lastmod>2020-12-5</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.6</priority>
+	</url>
+</urlset>

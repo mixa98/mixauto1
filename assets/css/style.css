@@ -1,0 +1,481 @@
+@font-face {
+    src: url("mbfont.ttf");
+    font-family: "mbfont";
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "mbfont";
+}
+
+
+/* Uređivanje navigacije */
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #363636;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+
+}
+
+nav {
+    width: 40%;
+    height: 100px;
+    left: 30%;
+    position: fixed;
+    top: -100vh;
+    z-index: 99;
+    background-color: #363636;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+}
+
+nav.open {
+    top: 0;
+    border-radius: initial;
+}
+
+.nav-list {
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 2rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+nav li a {
+    color: #fff700;
+}
+
+#navsoc span {
+    color: #fff700;
+    font-size: 2rem;
+    margin: 0 20px;
+    padding-top: 30px;
+}
+
+.menu-toggler {
+    position: absolute;
+    top: 1.5rem;
+    right: 5rem;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 650ms ease-out;
+}
+
+.menu-toggler.open {
+    transform: rotate(-45deg);
+}
+
+.bar {
+    background-color: #fff700;
+    width: 100%;
+    height: 4px;
+    border-radius: 0.8rem;
+}
+
+.bar.half {
+    width: 50%;
+}
+
+.bar.top {
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.top {
+    transform: rotate(-450deg) translateX(0.8rem);
+}
+
+.bar.bottom {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.bottom {
+    transform: rotate(-450deg) translateX(-0.8rem);
+}
+
+#navlinks li a {
+    text-decoration: none;
+    color: #fff700;
+    padding-bottom: 10px;
+
+}
+
+/* --------------------------- */
+
+#slika img {
+    width: 100%;
+
+}
+
+.naslov {
+    color: black;
+}
+
+#autslika img {
+    width: 100%;
+    height: auto;
+}
+
+#procitajvise {
+    padding: 10px 20px;
+
+}
+
+#onamaslika img {
+    max-width: 100%;
+    height: auto;
+}
+
+.centar {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn0:hover {
+    color: #fff700;
+}
+
+.partner img {
+    filter: grayscale(100%);
+    transition: ease 1s;
+}
+
+#partneri {
+    background-color: #f4f4f4;
+}
+
+#futer {
+    background-color: #363636;
+    color: white;
+}
+
+#ikone span {
+    margin: 10px 30px;
+    font-size: 30px;
+    color: white;
+}
+
+#info a {
+    color: white;
+}
+
+.tamno {
+    background-color: #dbdbdb;
+}
+
+.sivo {
+    background-color: #f4f4f4;
+}
+
+.car p {
+    font-weight: bold;
+}
+
+.svi h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.svi h5 {
+    font-weight: bold;
+}
+
+#svavozila p {
+    padding-top: 15px;
+}
+
+.bord {
+    border-bottom: 1px solid black;
+}
+
+#trazi {
+    width: 80%;
+    padding: 15px;
+}
+
+#izaberi img {
+    filter: grayscale(100%);
+    transition: ease 1s;
+}
+
+.bord1 {
+    border-top: 1px solid black;
+}
+
+#tabela td {
+    padding: 10px 40px;
+    font-weight: bold;
+
+}
+
+table {
+    border: 1px solid black;
+}
+
+#infovoz {
+    background-color: #f4f4f4;
+}
+
+
+#tabaut td {
+    padding: 10px 40px;
+    font-weight: bold;
+
+}
+
+#tabaut tr {
+    background-color: #dbdbdb;
+}
+
+#tabaut table {
+    border: none;
+}
+
+#tabiko a {
+    color: black;
+    font-size: 40px;
+}
+
+#tabiko td {
+    background-color: #dbdbdb;
+}
+
+.probna p {
+    margin-top: 20px;
+}
+
+.probna input {
+    width: 60%;
+}
+
+.probna {
+    border: none;
+    background-color: #dbdbdb;
+    width: 80%;
+}
+
+#datum {
+    margin-bottom: 30px;
+}
+
+#zakazi {
+    margin-bottom: 30px;
+}
+
+#zakaziteh {
+    margin-bottom: 30px;
+}
+
+#zapremina {
+    margin-bottom: 30px;
+}
+
+.lose {
+    color: red;
+}
+
+#loseime {
+    display: none;
+}
+
+#loseprezime {
+    display: none;
+}
+
+#losmejl {
+    display: none;
+}
+
+#losbroj {
+    display: none;
+}
+
+#loseimeteh {
+    display: none;
+}
+
+#loseprezimeteh {
+    display: none;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 415px) {
+
+    .logonav img {
+        width: 100px;
+    }
+
+    .menu-toggler {
+        height: 30px;
+        width: 50%;
+        right: 30%;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    nav li a {
+        font-size: 20px;
+    }
+
+    .nas {
+        font-size: 20px;
+    }
+
+    #ikone span {
+        font-size: 20px;
+        margin: 10px 15px;
+    }
+
+    #tabela td {
+        padding: 10px 10px;
+    }
+
+
+
+    #najpit h5 {
+        font-size: 15px;
+    }
+
+    #najpit p {
+        font-size: 10px;
+    }
+
+    #tabela td {
+        font-size: 10px;
+    }
+
+    #tabaut td {
+        padding: 10px 8px;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    #mxautotext p {
+        padding: 0 5%;
+
+    }
+
+
+
+    .menu-toggler {
+        height: 40px;
+        width: 50%;
+        right: 30%;
+    }
+
+    #procitajvise {
+        margin-bottom: 40px;
+    }
+
+    .nas {
+        font-size: 30px;
+    }
+
+    #tabaut td {
+        padding: 10px 10px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #navsoc {
+        visibility: hidden;
+    }
+
+
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        opacity: 0.95;
+    }
+
+    li {
+        margin: 2rem 0;
+    }
+
+    #izaberi img {
+        width: 20%;
+        margin-top: 10%;
+    }
+
+    #trazi {
+        margin-bottom: 30px;
+    }
+
+    #tabela {
+        margin: 0 auto;
+    }
+
+    .form2 {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .ftr {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+}
